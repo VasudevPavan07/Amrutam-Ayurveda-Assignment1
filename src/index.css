@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  overflow-x: hidden;
+}
+
+.signup-btn{
+  background-color: darkgreen;
+}
+.infocard{display: flex;}
+
+@media (max-width: 768px) {
+  .infocard {
+    display: grid;
+    place-items:center ; 
+    
+  }
+  body {
+    overflow-x: hidden;
+  }
+}
+@media (max-width: 1024px) {
+  .infocard {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .usecard1{
+    width:300px ;
+  }
+  body {
+    overflow-x: hidden;
+  }
+}
+
+@media (min-width: 1025px) {
+  /* Styles for desktop screens */
+  .usecard1{
+    width:500px;
+    font-size:  2.4rem;
+  }
+  .usecard{
+    font-size: 1.5rem;
+  
+  }
+  body {
+    overflow-x: hidden;
+  }
+}
+
+
+
+
+  
+
+@media (max-width:768px) {
+  .usecard1{
+    width:280px;
+    font-size: 1.2rem;
+  }
+ .usesection{
+  display: grid;
+  place-items:center ;
+ }
+ .cardleft{
+  display: grid;
+  place-items: center;
+  border:solid black 2px;
+  place-content:center ;
+
+ }
+ body {
+  overflow-x: hidden;
+}
+}
+
+
+:root {
+  font-family: "Inter",  sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color:rgb(255, 247, 226);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
